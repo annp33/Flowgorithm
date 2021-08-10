@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-10 12:11:47 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMTo1OTozMiAiOzI1OTU="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMjoxMTo0NyAiOzI7MjY5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 - 3.29 Elabore um fluxograma que permita a entrada de dez valores e calcule o produto de todos eles."/>
+            <declare name="num, produto, contador" type="Integer" array="False" size=""/>
+            <assign variable="produto" expression="1"/>
+            <for variable="contador" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Entre com o &quot; &amp; contador &amp; &quot;&#186; n&#250;mero&quot;" newline="True"/>
+                <input variable="num"/>
+                <assign variable="produto" expression="produto*num"/>
+            </for>
+            <output expression="&quot;O produto dos dez n&#250;meros digitados &#233; igual a: &quot; &amp; produto" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-10 11:41:36 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTA4OyIwNjo0MToxOCAiOzI2MDE="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMTo0MTozNiAiOzk7MjcwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 - 3.7 Elabore um fluxograma que permita a entrada de um n&#250;mero inteiro e diga se ele &#233; para ou &#237;mpar."/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <do expression="num &lt; 0">
+                <output expression="&quot;Entre com um n&#250;mero inteiro positivo&quot;" newline="True"/>
+                <input variable="num"/>
+            </do>
+            <if expression="num%2 == 0">
+                <then>
+                    <output expression="num &amp; &quot; &#233; um n&#250;mero par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="num &amp; &quot; &#233; um n&#250;mero &#237;mpar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

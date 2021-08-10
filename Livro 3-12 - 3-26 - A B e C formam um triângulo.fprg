@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-10 11:40:27 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMToyMToyNiAiOzI1ODc="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMTo0MDoyNyAiOzU7MjcwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 - 3.26 Elabore um fluxograma que receba tr&#234;s valores digitados A, B e C, informando se estes podem ser os lados de um tri&#226;ngulo. O ABC &#233; um tri&#226;ngulo se A &lt; B + C, B &lt;  A + C e C &lt; A + B."/>
+            <declare name="A, B, C" type="Integer" array="False" size=""/>
+            <do expression="A &lt;= 0">
+                <output expression="&quot;Entre com o valor de A&quot;" newline="True"/>
+                <input variable="A"/>
+            </do>
+            <do expression="B &lt;= 0">
+                <output expression="&quot;Entre com o valor de B&quot;" newline="True"/>
+                <input variable="B"/>
+            </do>
+            <do expression="C &lt;= 0">
+                <output expression="&quot;Entre com o valor de C&quot;" newline="True"/>
+                <input variable="C"/>
+            </do>
+            <if expression="A &lt; B + C &amp;&amp; B &lt;  A + C &amp;&amp; C &lt; A + B">
+                <then>
+                    <output expression="A &amp; &quot;, &quot; &amp; B &amp; &quot; e &quot; &amp; C &amp; &quot; podem ser os lados um tri&#226;ngulo.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="A &amp; &quot;, &quot; &amp; B &amp; &quot; e &quot; &amp; C &amp; &quot; N&#195;O podem ser os lados de um tri&#226;ngulo.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

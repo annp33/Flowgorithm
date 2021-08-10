@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-08 06:59:43 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTA2OyIxMDo1OTo0OCAiOzI2MDY="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTA4OyIwNjo1OTo0MyAiOzIwOzI3NjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 &#8211; 3.8 &#8211; Elabore um fluxograma que leia dois n&#250;meros (x e y) e escreva como resultado o maior deles."/>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre com um n&#250;mero inteiro x&quot;" newline="True"/>
+            <input variable="(x)"/>
+            <output expression="&quot;Entre com um n&#250;mero inteiro y&quot;" newline="True"/>
+            <input variable="(y)"/>
+            <if expression="x &gt; y">
+                <then>
+                    <output expression="&quot;O n&#250;mero &quot; &amp; x &amp; &quot; &#233; maior que o n&#250;mero &quot; &amp; y" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O n&#250;mero &quot; &amp; y &amp; &quot; &#233; maior que o n&#250;mero &quot; &amp; x" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

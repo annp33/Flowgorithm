@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-10 11:19:08 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMDo0NzozMCAiOzI1ODk="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMToxOTowOCAiOzM7MjcwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 - 3.9 Elabore um fluxograma que permita a entrada de dois valores, x e y, troque seus valores entre si e ent&#227;o exiba os novos resultados. "/>
+            <declare name="x, y, x2, y2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre com o valor de x&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Entre com o valor de y&quot;" newline="True"/>
+            <input variable="y"/>
+            <assign variable="x2" expression="y"/>
+            <assign variable="y2" expression="x"/>
+            <output expression="&quot;x = &quot; &amp; x2 &amp; &quot; e y = &quot; &amp; y2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
