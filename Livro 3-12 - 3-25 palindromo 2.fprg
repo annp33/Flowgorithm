@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-11 09:48:19 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMDozNjoyMCAiOzI1ODY="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTExOyIwOTo0ODoxOSAiOzM2OzI3NzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 - 3.35 O n&#250;mero 3025 possui uma caracter&#237;stica interessante, sendo a seguinte: 30 + 25 = 55 e 55^2= 3025. Elabore um fluxograma que verifique se um n&#250;mero inteiro de quatro algarismos (digitado) tem essa propriedade ou n&#227;o."/>
+            <declare name="num, dezenaDeMilhar, milhar, dezena, unidade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre com um n&#250;mero inteiro positivo de 5 algarismos&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="dezenaDeMilhar" expression="(num/1000)/10"/>
+            <assign variable="milhar" expression="(num/1000)%10"/>
+            <assign variable="dezena" expression="(num%100)/10"/>
+            <assign variable="unidade" expression="(num %100)%10"/>
+            <if expression="dezenaDeMilhar == unidade &amp;&amp; milhar == dezena">
+                <then>
+                    <output expression="&quot;O n&#250;mero digitado &#233; palindromo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O n&#250;mero digitado N&#195;O &#233; pal&#237;ndromo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
