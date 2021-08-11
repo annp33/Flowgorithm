@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-10 10:10:09 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMDowMDozNCAiOzI1ODI="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMDoxMDowOSAiOzc7MjY5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 - 3.32 Elabore um fluxograma que represente um algoritmo para calcular a soma dos primeiros N termnos da sequ&#234;ncia definida a seguir, com N fornecido via teclado: &#13;&#10;S =  1 + 2 + 3 + 4 + 5 + ... + N"/>
+            <declare name="N, soma, contador" type="Integer" array="False" size=""/>
+            <do expression="N &lt;= 0">
+                <output expression="&quot;Entre com o n&#250;mero de termos da sequ&#234;ncia&quot;" newline="True"/>
+                <input variable="N"/>
+            </do>
+            <assign variable="soma" expression="0"/>
+            <assign variable="contador" expression="1"/>
+            <while expression="contador &lt; N+1">
+                <assign variable="soma" expression="soma + contador"/>
+                <assign variable="contador" expression="contador + 1"/>
+            </while>
+            <output expression="&quot;A soma dos &quot; &amp; N &amp; &quot; primeiros termos da sequ&#234;ncia &#233;: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

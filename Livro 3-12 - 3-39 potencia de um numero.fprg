@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-10 10:36:18 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMDoxMjoxMSAiOzI1ODA="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTEwOyIxMDozNjoxOCAiOzE1OzI3NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 - 3.39 Elabore um fluxograma que calcule x^y para quaisquer valores de x e y (incluindo 0)."/>
+            <declare name="x, potencia" type="Real" array="False" size=""/>
+            <declare name="y, contador" type="Integer" array="False" size=""/>
+            <assign variable="potencia" expression="1"/>
+            <output expression="&quot;Entre o valor de x&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Entre com o valor de y (inteiro)&quot;" newline="True"/>
+            <input variable="y"/>
+            <if expression="y &gt;= 0">
+                <then>
+                    <for variable="contador" start="1" end="y" direction="inc" step="1">
+                        <assign variable="potencia" expression="potencia * x"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="contador" start="1" end="-y" direction="inc" step="1">
+                        <assign variable="potencia" expression="potencia * x"/>
+                    </for>
+                    <assign variable="potencia" expression="1/potencia"/>
+                </else>
+            </if>
+            <output expression="x &amp; &quot; elevado a &quot; &amp; y &amp; &quot; &#233; igual a: &quot; &amp; potencia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
