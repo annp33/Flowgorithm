@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-17 03:56:01 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTE3OyIwMzoxNjo0NCAiOzI1OTk="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTE3OyIwMzo1NjowMSAiOzE1OzI3NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 - 3.41 Elabore um fluxograma que dever&#225; calcular o n&#250;mero de maneiras de escolher r dentre n objetos diferentes, n&#227;o importando a ordem. Lembrando: C(n,r)=(n!)/(r!*(n-r)!, em que n e r s&#227;o valores digitados."/>
+            <declare name="n, r, resultado" type="Integer" array="False" size=""/>
+            <do expression="n &lt; 0">
+                <output expression="&quot;Entre com um valor inteiro positivo de n&quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <do expression="r &lt; 0">
+                <output expression="&quot;Entre com um valor inteiro positivo de r&quot;" newline="True"/>
+                <input variable="r"/>
+            </do>
+            <assign variable="resultado" expression="calculaFatorial(n)/((calculaFatorial(r))*(calculaFatorial(n-r)))"/>
+            <output expression="&quot;O n&#250;mero de maneiras de escolher &quot; &amp; r &amp; &quot; dentre &quot; &amp; n &amp; &quot; objetos diferentes, n&#227;o importando a ordem, &#233; igual a: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="calculaFatorial" type="Integer" variable="fatorial">
+        <parameters>
+            <parameter name="num" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="fatorial, contador" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <assign variable="fatorial" expression="1"/>
+            <while expression="contador &lt; num + 1">
+                <assign variable="fatorial" expression="fatorial * contador"/>
+                <assign variable="contador" expression="contador + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
