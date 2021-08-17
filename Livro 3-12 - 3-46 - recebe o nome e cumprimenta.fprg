@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-17 03:16:34 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTE3OyIwMzowNjo1NSAiOzI2MDA="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTE3OyIwMzoxNjozNCAiOzM7MjcwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 - 3.46 Escreva um fluxograma que leia o nome do usu&#225;rio e o cumprimente. Por exemplo, se voc&#234; se chamar An&#237;bal, a resposta a ser exibida ser&#225;: 'Ol&#225;, An&#237;bal, meu nome &#233; Chuck. Voc&#234; quer brincar comigo?'"/>
+            <declare name="nomeUsuario" type="String" array="False" size=""/>
+            <output expression="&quot;Qual &#233; o seu nome?&quot;" newline="True"/>
+            <input variable="nomeUsuario"/>
+            <output expression="&quot;Ol&#225;, &quot; &amp; nomeUsuario &amp; &quot;, meu nome &#233; Chuck. Voc&#234; quer brincar comigo?&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
