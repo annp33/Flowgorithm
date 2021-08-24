@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-22 12:37:36 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTIyOyIxMjowMDo1OCAiOzI1OTM="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTIyOyIxMjozNzozNiAiOzExOzI3NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="5.8 - 5.8 Construa um fluxograma para efetuar a soma de todos os elementos de &#237;ndice par de um vetor de tamanho N."/>
+            <declare name="soma" type="Real" array="False" size=""/>
+            <declare name="contador, N" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <output expression="&quot;Entre com o n&#250;mero de elementos do vetor: &quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="vetor" type="Real" array="True" size="N"/>
+            <for variable="contador" start="0" end="N-1" direction="inc" step="1">
+                <output expression="&quot;Entre com o elemento de &#237;ndice '&quot; &amp; contador &amp; &quot;' do vetor: &quot;" newline="True"/>
+                <input variable="vetor[contador]"/>
+                <if expression="contador%2 == 0">
+                    <then>
+                        <assign variable="soma" expression="soma + vetor[contador]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;A soma dos elementos de &#237;ndice par do vetor &#233; igual a: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
