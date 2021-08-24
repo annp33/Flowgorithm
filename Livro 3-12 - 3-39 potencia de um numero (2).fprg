@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-23 12:49:28 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTIzOyIxMjo0Mjo1MSAiOzI1OTM="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTIzOyIxMjo0OToyOCAiOzc7MjcxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.12 - 3.39 Elabore um fluxograma que calcule x^y para quaisquer valores de x e y (incluindo 0)."/>
+            <declare name="x, y, potencia" type="Real" array="False" size=""/>
+            <output expression="&quot;Entre com o valor de x:&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Entre com o valor de y:&quot;" newline="True"/>
+            <input variable="y"/>
+            <assign variable="potencia" expression="x^y"/>
+            <output expression="&quot;x ^ y = &quot; &amp; potencia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
