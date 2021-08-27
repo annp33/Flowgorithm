@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PICHAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-27 05:04:30 "/>
+        <attribute name="created" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTI3OyIwNDoyMzoyNyAiOzI2MDA="/>
+        <attribute name="edited" value="UElDSEFVO0RTSy1QQ0gtSERfMDAwMTsyMDIxLTA4LTI3OyIwNTowNDozMCAiOzQxOzI3NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="5.8 - 5.11 Elabore um fluxograma que calcule o produto escalar de dois vetores da Geometria Anal&#237;tica. Utilize vetores de tamanho 3 na solu&#231;&#227;o. &#13;&#10;&#13;&#10;OBS: Dados os vetores &#13;&#10;v=(v1,v2,v3) e w=(w1,w2,w3), &#13;&#10;definimos o produto escalar (ou interno) entre v e w, como o escalar real:  &#13;&#10;v*w = v1*w1 + v2*w2 + v3*w3 &#13;&#10;Fonte:&#13;&#10; http://www.uel.br/projetos/matessencial/basico/geometria/vetor3d.html&#13;&#10;"/>
+            <declare name="vetorA" type="Real" array="True" size="3"/>
+            <declare name="vetorB" type="Real" array="True" size="3"/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <for variable="contador" start="0" end="2" direction="inc" step="1">
+                <output expression="&quot;Entre com o &quot; &amp; contador+1 &amp; &quot;&#186; elemento do vetor A: &quot;" newline="True"/>
+                <input variable="vetorA[contador]"/>
+            </for>
+            <for variable="contador" start="0" end="2" direction="inc" step="1">
+                <output expression="&quot;Entre com o &quot; &amp; contador+1 &amp; &quot;&#186; elemento do vetor B: &quot;" newline="True"/>
+                <input variable="vetorB[contador]"/>
+            </for>
+            <output expression="&quot;O produto escalar entre os vetores A e B &#233; igual a: &quot; &amp; calculaProdutoEscalar(vetorA,vetorB)" newline="True"/>
+        </body>
+    </function>
+    <function name="calculaProdutoEscalar" type="Real" variable="produtoEscalar">
+        <parameters>
+            <parameter name="A" type="Real" array="True"/>
+            <parameter name="B" type="Real" array="True"/>
+        </parameters>
+        <body>
+            <declare name="produtoEscalar" type="Real" array="False" size=""/>
+            <assign variable="produtoEscalar" expression="(A[0]*B[0]) + (A[1]*B[1])+ (A[2]*B[2])"/>
+        </body>
+    </function>
+</flowgorithm>
